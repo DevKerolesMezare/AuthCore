@@ -1,0 +1,93 @@
+.login-container {
+  width: 100%;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.login-container h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+}
+
+.login-container p {
+  color: #64748b;
+  margin-bottom: 28px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.form-group input {
+  height: 52px;
+  padding: 0 16px;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  font-size: 15px;
+  font-family: "Segoe UI", sans-serif;
+  background: #ffffff;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-group input::placeholder {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.form-group input:focus {
+  border-color: #2563eb;
+}
+
+button {
+  height: 52px;
+  border: none;
+  border-radius: 12px;
+  background: #0f172a;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Segoe UI", sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.92;
+}
+
+.register-link {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #64748b;
+  text-align: center;
+}
+
+.register-link a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}

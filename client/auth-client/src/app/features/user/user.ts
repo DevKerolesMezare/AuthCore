@@ -1,0 +1,16 @@
+import { Component } from '@angular/core';
+import { ChildrenOutletContexts, RouterOutlet } from '@angular/router';
+
+@Component({
+  selector: 'app-user',
+  imports: [RouterOutlet],
+  templateUrl: './user.html',
+  styleUrl: './user.css',
+})
+export class User {
+  constructor(private context: ChildrenOutletContexts) {}
+
+  getRouteUrl() {
+    return this.context.getContext('primary')?.route?.url;
+  }
+}

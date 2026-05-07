@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.auth-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc, #eef2ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.auth-layout {
+  width: 1100px;
+  min-height: 650px;
+  background: #ffffff;
+  border-radius: 28px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.brand-section {
+  width: 45%;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.brand-content {
+  color: white;
+}
+
+.brand-content h1 {
+  font-size: 52px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.brand-content p {
+  font-size: 22px;
+  margin-bottom: 12px;
+  opacity: 0.95;
+}
+
+.brand-content span {
+  font-size: 15px;
+  opacity: 0.7;
+  letter-spacing: 1px;
+}
+
+.form-section {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #b6b5b565;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+}
+

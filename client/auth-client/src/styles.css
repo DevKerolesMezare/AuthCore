@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+.fade-page {
+  width: 100%;
+  animation: simpleFade 0.4s ease-in-out;
+}
+
+@keyframes simpleFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

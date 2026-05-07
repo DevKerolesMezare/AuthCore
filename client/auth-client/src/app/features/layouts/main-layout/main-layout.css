@@ -1,0 +1,159 @@
+
+.menu-list a.active-link {
+  background: #dcfce7;
+  color: #16a34a !important;
+  font-weight: 700;
+  border-left: 4px solid #16a34a;
+  border-radius: 10px;
+}
+
+.main-layout {
+  min-height: 100vh;
+  display: flex;
+  background: #f8fafc;
+}
+
+.sidebar {
+  width: 260px;
+  background: #ffffff;
+  border-right: 1px solid #e2e8f0;
+  padding: 30px 20px;
+}
+
+.logo h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #16a34a;
+  margin-bottom: 40px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li {
+  margin-bottom: 14px;
+}
+
+.menu-list a {
+  display: block;
+  text-decoration: none;
+  color: #334155;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 12px 14px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.menu-list a:hover {
+  background: #f1f5f9;
+  color: #16a34a;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.topbar {
+  height: 80px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-input {
+  width: 320px;
+  height: 46px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 0 16px;
+  outline: none;
+  font-size: 14px;
+}
+
+.logout-btn {
+  height: 46px;
+  padding: 0 24px;
+  border: none;
+  border-radius: 12px;
+  background: #111827;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.page-content {
+  padding: 40px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li {
+  margin-bottom: 14px;
+}
+
+/* اشكال الروابط بتاعتي */
+/* ---------------------- */
+.sidebar-footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.social-link {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.whatsapp-link {
+  background: #f0fdf4;
+  color: #16a34a;
+}
+
+.whatsapp-link:hover {
+  background: #dcfce7;
+}
+
+.github-link {
+  background: #f8fafc;
+  color: #111827;
+}
+
+.github-link:hover {
+  background: #e2e8f0;
+}
+
+.linkedin-link {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px;
+  border-radius: 12px;
+  background: #f8fafc;
+  color: #0a66c2;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.linkedin-link:hover {
+  background: #e0f2fe;
+  transform: translateY(-2px);
+}

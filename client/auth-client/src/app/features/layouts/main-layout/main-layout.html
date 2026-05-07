@@ -1,0 +1,89 @@
+<div class="main-layout">
+  <aside class="sidebar">
+    <div class="logo">
+      <h2>Auth EC</h2>
+    </div>
+    <ul class="menu-list">
+      <li>
+        <a
+          routerLink="/dashboard"
+          routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          Dashboard
+        </a>
+      </li>
+
+      <li>
+        <a routerLink="/admin-only" routerLinkActive="active-link"> Admin Only </a>
+      </li>
+
+      <li>
+        <a routerLink="/admin-or-manager" routerLinkActive="active-link"> Admin Or Manager </a>
+      </li>
+
+      <li>
+        <a routerLink="/security-access" routerLinkActive="active-link"> Security Access </a>
+      </li>
+
+      <li>
+        <a routerLink="/change-password" routerLinkActive="active-link"> Change Password </a>
+      </li>
+
+      <li>
+        <a routerLink="/active-sessions" routerLinkActive="active-link"> Active Sessions </a>
+      </li>
+
+      <li>
+        <a routerLink="/notification-access" routerLinkActive="active-link">
+          Notification Access
+        </a>
+      </li>
+
+      <li>
+        <a routerLink="/account-settings" routerLinkActive="active-link"> Account Settings </a>
+      </li>
+    </ul>
+
+    <div class="sidebar-footer">
+      <a
+        href="https://eg.linkedin.com/in/kirolos-botros-a20804372"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="linkedin-link"
+      >
+        My LinkedIn
+      </a>
+    </div>
+
+    <a
+      href="https://wa.me/+201029541543"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="social-link whatsapp-link"
+    >
+      WhatsApp
+    </a>
+
+    <a
+      href="https://github.com/DevKerolesMezare"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="social-link github-link"
+    >
+      GitHub
+    </a>
+  </aside>
+
+  <div class="main-content">
+    <div class="topbar">
+      <input type="text" placeholder="Search..." class="search-input" />
+
+      <button class="logout-btn" (click)="onLogout()">Logout</button>
+    </div>
+
+    <div class="page-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

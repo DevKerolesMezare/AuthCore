@@ -1,0 +1,57 @@
+.dashboard-container {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.dashboard-header {
+  margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.dashboard-header p {
+  font-size: 15px;
+  color: #64748b;
+}
+
+.user-info h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 10px;
+}
+
+.user-info h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #16a34a;
+  margin-bottom: 12px;
+}
+
+.user-info p {
+  font-size: 15px;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.admin-btn {
+  height: 50px;
+  padding: 0 26px;
+  border: none;
+  border-radius: 12px;
+  background: #111827;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admin-btn:hover {
+  opacity: 0.92;
+}
