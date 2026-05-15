@@ -1,6 +1,6 @@
 .register-container {
   width: 100%;
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .register-container h2 {
@@ -42,7 +42,7 @@
   border: 1px solid #dbeafe;
   border-radius: 12px;
   font-size: 15px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background: #ffffff;
   outline: none;
   transition: 0.3s;
@@ -64,7 +64,7 @@ button {
   color: white;
   font-size: 15px;
   font-weight: 600;
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -88,4 +88,12 @@ button:hover {
 
 .login-link a:hover {
   text-decoration: underline;
+}
+.error,
+.text-danger {
+  color: #dc2626;
+  font-size: 13px;
+  margin-top: 6px;
+  font-weight: 500;
+  min-height: 18px;
 }

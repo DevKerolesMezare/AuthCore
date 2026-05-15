@@ -7,6 +7,7 @@ import { ChangePassword } from '../authorizeDemo/change-password/change-password
 import { ActiveSessions } from '../authorizeDemo/active-sessions/active-sessions';
 import { NotificationAccess } from '../authorizeDemo/notification-access/notification-access';
 import { AccountSettings } from '../authorizeDemo/account-settings/account-settings';
+import { Forbidden } from '../forbidden/forbidden';
 
 export const routes: Routes = [
   {
@@ -41,4 +42,8 @@ export const routes: Routes = [
     path: 'account-settings',
     component: AccountSettings,
   },
+  {
+  path: 'forbidden',
+  component: Forbidden
+}
 ];

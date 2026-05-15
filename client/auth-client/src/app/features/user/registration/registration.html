@@ -1,37 +1,76 @@
-<div class="fade-page">
-  <div class="register-container">
-    <div class="register-container">
-      <h2>Create Account</h2>
-      <p>Register to get started</p>
+<form class="register-form" [formGroup]="registerForm">
 
-      <form class="register-form">
-        <div class="form-group">
-          <label>Full Name</label>
-          <input type="text" placeholder="Enter your full name" />
-        </div>
+  <div class="form-group">
+    <label>Full Name</label>
+    <input
+      type="text"
+      placeholder="Enter your full name"
+      formControlName="fullName"
+    />
 
-        <div class="form-group">
-          <label>Email</label>
-          <input type="email" placeholder="Enter your email" />
-        </div>
-
-        <div class="form-group">
-          <label>Password</label>
-          <input type="password" placeholder="Enter your password" />
-        </div>
-
-        <div class="form-group">
-          <label>Confirm Password</label>
-          <input type="password" placeholder="Confirm your password" />
-        </div>
-
-        <button type="submit">Create Account</button>
-
-        <div class="login-link">
-          Already have an account?
-          <a routerLink="/signin">Sign In</a>
-        </div>
-      </form>
-    </div>
+    @if (getError('fullName')) {
+      <p class="text-danger">
+        Full Name is required (minimum 3 characters)
+      </p>
+    }
   </div>
-</div>
+
+  <div class="form-group">
+    <label>Email</label>
+    <input
+      type="email"
+      placeholder="Enter your email"
+      formControlName="email"
+    />
+
+    @if (getError('email')) {
+      <p class="text-danger">
+        Please enter a valid email
+      </p>
+    }
+  </div>
+
+  <div class="form-group">
+    <label>Password</label>
+    <input
+      type="password"
+      placeholder="Enter your password"
+      formControlName="password"
+    />
+
+    @if (getError('password')) {
+      <p class="text-danger">
+        Password must be at least 6 characters
+      </p>
+    }
+  </div>
+
+  <div class="form-group">
+    <label>Confirm Password</label>
+    <input
+      type="password"
+      placeholder="Confirm your password"
+      formControlName="confirmPassword"
+    />
+
+    @if (getError('confirmPassword')) {
+      <p class="text-danger">
+        Confirm Password is required
+      </p>
+    }
+
+    @if (registerForm.getError('passwordMismatch') && registerForm.get('confirmPassword')?.touched) {
+      <p class="text-danger">
+        Password and Confirm Password must match
+      </p>
+    }
+  </div>
+
+  <button type="submit">Create Account</button>
+
+  <div class="login-link">
+    Already have an account?
+    <a routerLink="/signin">Sign In</a>
+  </div>
+
+</form>

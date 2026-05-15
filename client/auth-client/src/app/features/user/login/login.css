@@ -1,6 +1,6 @@
 .login-container {
   width: 100%;
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .login-container h2 {
@@ -27,6 +27,8 @@
 .form-group {
   display: flex;
   flex-direction: column;
+  position: relative;
+  margin-bottom: 8px;
 }
 
 .form-group label {
@@ -42,7 +44,7 @@
   border: 1px solid #dbeafe;
   border-radius: 12px;
   font-size: 15px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background: #ffffff;
   outline: none;
   transition: 0.3s;
@@ -65,7 +67,7 @@ button {
   color: white;
   font-size: 15px;
   font-weight: 600;
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -90,4 +92,11 @@ button:hover {
 
 .register-link a:hover {
   text-decoration: underline;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 13px;
+  margin-top: 6px;
+  font-weight: 500;
 }
